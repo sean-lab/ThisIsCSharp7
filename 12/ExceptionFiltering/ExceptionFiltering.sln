@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionFiltering", "ExceptionFiltering.csproj", "{4FB98CB9-0A60-495D-8360-E2062C68CE51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FB98CB9-0A60-495D-8360-E2062C68CE51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB98CB9-0A60-495D-8360-E2062C68CE51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB98CB9-0A60-495D-8360-E2062C68CE51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB98CB9-0A60-495D-8360-E2062C68CE51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE06EEFF-F07E-4EA0-8597-690F60154E63}
+	EndGlobalSection
+EndGlobal
