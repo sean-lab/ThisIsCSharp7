@@ -27,8 +27,8 @@ namespace ParallelLoop
         static void Main(string[] args)
         {
             long from = Convert.ToInt64(args[0]);
-            long to   = Convert.ToInt64(args[1]);
-            
+            long to = Convert.ToInt64(args[1]);
+
             Console.WriteLine("Please press enter to start...");
             Console.ReadLine();
             Console.WriteLine("Started...");
@@ -37,16 +37,18 @@ namespace ParallelLoop
             List<long> total = new List<long>();
 
             Parallel.For(from, to, (long i) =>
-                {
-                    if (IsPrime(i))
+            {
+                if (IsPrime(i))
+                    lock(total)
                         total.Add(i);
-                });
+                    
+            });
 
             DateTime endTime = DateTime.Now;
 
             TimeSpan ellapsed = endTime - startTime;
-            
-            Console.WriteLine("Prime number count between {0} and {1} : {2}", 
+
+            Console.WriteLine("Prime number count between {0} and {1} : {2}",
                                                         from, to, total.Count);
             Console.WriteLine("Ellapsed time : {0}", ellapsed);
         }
